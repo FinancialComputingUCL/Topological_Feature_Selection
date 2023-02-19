@@ -220,5 +220,6 @@ $RECYCLE.BIN/
 
 **/__pycache__
 **/.ipynb_checkpoints
+**/.gitignore
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,pycharm+all,intellij+all,windows,linux
