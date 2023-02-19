@@ -6,7 +6,7 @@ In this work, we present a novel unsupervised, graph-based filter feature select
 
 # Getting Started
 
-1. Unpack the content of the two folders ```./data/entire_datasets.zip``` and ```./data/splitted_datasets.zip```. [**MANDATORY STEP**] {color="red"}
+1. Unpack the content of the two folders ```./data/entire_datasets.zip``` and ```./data/splitted_datasets.zip```. <span style="color: red">**MANDATORY STEP**</span>.
 2. Run ```python3 main.py --stage 'SM_COMPUTATION' --dataset '<dataset_name>' --cc_type '<similarity_measure>'``` for each dataset and similarity measure you are interested in. Make sure all the similarity matrices are in the main directory (not in sub-directories).
 3. Run ```python3 main.py --stage 'TFS' --dataset '<dataset_name>' --classification_algo '<classification_algorithm>'``` to perform **Topological Feature Selection + Training Stage** for each specific dataset and classification algorithm you are interested in.
 4. Run ```python3 main.py --stage 'IFS' --dataset '<dataset_name>' --classification_algo '<classification_algorithm>'``` to perform **[Infinite Feature Selection](https://ieeexplore.ieee.org/iel7/34/4359286/09119168.pdf?casa_token=-I8btXZw0_8AAAAA:VU5GJmZ2V1Zty08uMdx2vi8aixWudPenTdxBcHKEQK2pmHBUpgXS3HjR9wEQJr5ZegzMTVKd) + Training Stage** for each specific dataset and classification algorithm you are interested in.
