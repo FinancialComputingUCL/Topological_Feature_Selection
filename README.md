@@ -6,7 +6,7 @@ In this work, we present a novel unsupervised, graph-based filter feature select
 
 # Getting Started
 
-1. Unpack the content of the two folders ```./data/entire_datasets.zip``` and ```./data/splitted_datasets.zip```. <span style="color: red">**MANDATORY STEP**</span>.
+1. Unpack the content of the two folders ```./data/entire_datasets.zip``` and ```./data/splitted_datasets.zip```. **(MANDATORY STEP)**
 2. Run ```python3 main.py --stage 'SM_COMPUTATION' --dataset '<dataset_name>' --cc_type '<similarity_measure>'``` for each dataset and similarity measure you are interested in. Make sure all the similarity matrices are in the main directory (not in sub-directories).
 3. Run ```python3 main.py --stage 'TFS' --dataset '<dataset_name>' --classification_algo '<classification_algorithm>'``` to perform **Topological Feature Selection + Training Stage** for each specific dataset and classification algorithm you are interested in.
 4. Run ```python3 main.py --stage 'IFS' --dataset '<dataset_name>' --classification_algo '<classification_algorithm>'``` to perform **[Infinite Feature Selection](https://ieeexplore.ieee.org/iel7/34/4359286/09119168.pdf?casa_token=-I8btXZw0_8AAAAA:VU5GJmZ2V1Zty08uMdx2vi8aixWudPenTdxBcHKEQK2pmHBUpgXS3HjR9wEQJr5ZegzMTVKd) + Training Stage** for each specific dataset and classification algorithm you are interested in.
@@ -15,3 +15,13 @@ In this work, we present a novel unsupervised, graph-based filter feature select
 7. Run ```python3 main.py --stage 'STATISTICAL_TEST' --dataset '<dataset_name>'``` to perform **Statistical Test Stage** for each specific dataset you are interested in.
 
 Once mandatory steps have been executed, the user can try the entire pipeline on the *lung_small* dataset, for which the similarity matrices are already provided.
+
+# License
+
+Copyright 2023 Antonio Briola, Tomaso Aste.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+```http://www.apache.org/licenses/LICENSE-2.0```
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
